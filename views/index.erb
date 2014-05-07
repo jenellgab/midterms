@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>Expense</title>
+	</head>
+	<body>
+		<ol>
+  <% @expenses.each do |expense| %>
+    <li><%= expense.list_entry %></li>
+<% end %>
+</ol>
+
+<a href="/new">New Student</a>
+	</body>
+</html>
